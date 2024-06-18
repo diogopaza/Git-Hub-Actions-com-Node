@@ -28,3 +28,9 @@ jobs:
         cache: 'npm'
     - run: npm install   
     - run: npm start
+    
+    - name: Aguardando para encerrar o NodeJS
+      run: sleep 30s
+
+    - name: Encerrando NodeJS
+      run: pkill -f "node ./server.js"
