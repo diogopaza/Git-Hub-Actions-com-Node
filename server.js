@@ -5,7 +5,14 @@ app.get('/', (req, res) => {
   res.send('Hello, World DIOGO PAZA!');
 });
 
-app.listen(4000, () => {
+const server = app.listen(4000, () => {
   console.log('Server listening on port 4000');
 });
+
+setTimeout(() =>{    
+    server.close()
+    console.log("App concluído");
+}, 5000);
+
+
 
