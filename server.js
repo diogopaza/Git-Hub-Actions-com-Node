@@ -11,7 +11,7 @@ const server = app.listen(4000, () => {
 
 setTimeout(() =>{    
     server.close()
-    console.log("App concluído Teste de push 2");
+    console.log("App concluído Teste de push 3");
 }, 5000);
 
 
